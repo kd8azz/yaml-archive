@@ -37,6 +37,11 @@
 #include <boost/io/ios_state.hpp>
 #include <boost/serialization/throw_exception.hpp>
 
+// later versions of boost prefix macros.
+#ifndef NULL_POINTER_TAG
+#define NULL_POINTER_TAG BOOST_SERIALIZATION_NULL_POINTER_TAG
+#endif
+
 using namespace boost::spirit::classic;
 
 namespace boost {

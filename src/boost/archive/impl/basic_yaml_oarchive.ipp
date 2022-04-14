@@ -24,6 +24,11 @@ using ::strlen;
 #include <boost/core/no_exceptions_support.hpp>
 #endif
 
+// later versions of boost prefix macros.
+#ifndef NULL_POINTER_TAG
+#define NULL_POINTER_TAG BOOST_SERIALIZATION_NULL_POINTER_TAG
+#endif
+
 namespace boost {
 namespace archive {
 

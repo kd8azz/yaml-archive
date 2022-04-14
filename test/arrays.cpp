@@ -2,6 +2,8 @@
 #include "io_fixture.hpp"
 #include <array>
 #include <boost/array.hpp>
+#include <boost/serialization/array.hpp>
+#include <boost/serialization/boost_array.hpp>
 #include <boost/test/unit_test.hpp>
 
 #define NVP(name) BOOST_SERIALIZATION_NVP(name)
